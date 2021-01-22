@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
 </head>
 <body>
+    <img src="{{url_for('static',filename='img/319079.jpg')}}" style="height:100px" alt="">
     <h1>欢迎来到<span style='color:red'>首页</span></h1>
     <h2>解析参数name:{{name}}</h2>
     <h2>解析参数age:{{age}}</h2>
     {% if sex %}
         <h2>解析参数sex:{{sex}}</h2>
     {% endif %}
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
 </body>
 </html>
